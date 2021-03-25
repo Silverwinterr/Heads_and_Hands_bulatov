@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hello</string>
+    <string name="buttonFirst">Button first</string>
+    <string name="buttonSecond">Button second</string>
+    <string name="pushkin">Sorry, there is nothing</string>
+    <string name="buttonName" translatable="false">Боль и страдание</string>
+</resources>
