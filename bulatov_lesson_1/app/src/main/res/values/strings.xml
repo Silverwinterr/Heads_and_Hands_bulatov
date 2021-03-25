@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">bulatov_lesson_1</string>
+    <string name="button_second">Вторая кнопка</string>
+    <string name="button_first">Первая кнопка</string>
+    <string name="ButtonView">Показать</string>
+    <string name="ButtonSave">Сохранить</string>
+    <string name="click">Жмак</string>
+</resources>
