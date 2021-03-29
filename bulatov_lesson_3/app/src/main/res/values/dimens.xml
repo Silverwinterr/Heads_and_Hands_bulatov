@@ -6,4 +6,27 @@
     <dimen name="app_bar_height">180dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="text_margin">16dp</dimen>
+    <dimen name="title_toolbar_start">31dp</dimen>
+    <dimen name="image_width">24dp</dimen>
+    <dimen name="image_height">24dp</dimen>
+    <dimen name="image_marginTop">10dp</dimen>
+    <dimen name="image_marginEnd">16dp</dimen>
+    <dimen name="text_marginStart">30dp</dimen>
+    <dimen name="image_marginStart">16dp</dimen>
+    <dimen name="layoutProfile_marginEnd">16dp</dimen>
+    <dimen name="layoutProfile_marginBottom">16dp</dimen>
+    <dimen name="layoutProfile_marginTop">56dp</dimen>
+    <dimen name="image_marginBottom">16dp</dimen>
+    <dimen name="layoutProfile_marginStart">16dp</dimen>
+    <dimen name="textProfile_marginStart">16dp</dimen>
+    <dimen name="textProfile_marginTop">32dp</dimen>
+    <dimen name="textProfile_marginBottom">23dp</dimen>
+    <dimen name="layoutPersonal_marginStart">16dp</dimen>
+    <dimen name="layoutPersonal_marginTop">30dp</dimen>
+    <dimen name="textPersonal_marginTop">26dp</dimen>
+    <dimen name="textExitProfile_marginStart">30dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="text_marginContent">18dp</dimen>
 </resources>

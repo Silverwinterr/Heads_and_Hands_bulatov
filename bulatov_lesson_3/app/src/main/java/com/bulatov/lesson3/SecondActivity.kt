@@ -1,12 +1,19 @@
 package com.bulatov.lesson3
 
 import android.os.Bundle
+import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 
-class SecondActivity:AppCompatActivity() {
+class SecondActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_second)
+        setContentView(R.layout.activity_second)
+
+        fun onCreateOptionsMenu(menu: Menu?): Boolean {
+            menuInflater.inflate(R.menu.menu_activity, menu)
+            return true
+        }
+
     }
 }
