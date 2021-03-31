@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="buttonFirst">Первое активити</string>
+    <string name="buttonSecond">Второе активити</string>
+    <string name="title_toolbar">Личный профиль</string>
+    <string name="titlePersonal">Личные данные</string>
+    <string name="namePersonal">Имя</string>
+    <string name="surnamePersonal">Фамилия</string>
+    <string name="emailPersonal">E-mail</string>
+    <string name="loginPersonal">Логин</string>
+    <string name="regionPersonal">Ваш регион</string>
+    <string name="textPersonal_exit">Выйти из аккаунта</string>
+    <string name="editPen">edit personal</string>
+    <string name="doorExit">Exit</string>
+</resources>
