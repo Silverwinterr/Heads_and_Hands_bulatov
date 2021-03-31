@@ -29,4 +29,16 @@
     <dimen name="fragment_horizontal_margin">16dp</dimen>
     <dimen name="fragment_vertical_margin">16dp</dimen>
     <dimen name="text_marginContent">18dp</dimen>
+    <dimen name="layoutPersonal_marginTop1">10dp</dimen>
+    <dimen name="topToolbar_margintop">24dp</dimen>
+    <dimen name="paddingTop">50dp</dimen>
+    <dimen name="relativeProfile_start">16dp</dimen>
+    <dimen name="relativeProfile_top">32dp</dimen>
+    <dimen name="relativeProfile_bottom">23dp</dimen>
+    <dimen name="image_profileTopMargin">16dp</dimen>
+    <dimen name="image_profileStartMargin">16dp</dimen>
+    <dimen name="image_profileBottomMargin">16dp</dimen>
+    <dimen name="relativeProfileParent_top">10dp</dimen>
+    <dimen name="relativeProfileParent_end">15dp</dimen>
+    <dimen name="relativeProfileParent_bottom">17dp</dimen>
 </resources>

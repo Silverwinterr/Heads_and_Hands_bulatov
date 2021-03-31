@@ -1,44 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white"
-    android:layout_marginTop="56dp"
-    android:layout_marginEnd="15dp"
-    android:layout_marginBottom="17dp">
+<layout xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.Employee">
 
-    <TableRow
+    <data>
+
+        <variable
+            name="profileUserWork1"
+            type="com.bulatov.lesson3.UserWork" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layoutPersonal_marginStart"
+        android:layout_marginTop="@dimen/relativeProfileParent_top"
+        android:layout_marginEnd="@dimen/relativeProfileParent_end"
+        android:layout_marginBottom="@dimen/relativeProfileParent_bottom"
+        android:background="@color/white"
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/profile_spec" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="23dp">
-
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Карта N2391921982"
-                android:textColor="@color/text_data"
-                android:textSize="@dimen/text" />
-            <TextView
+                android:layout_marginStart="@dimen/image_profileStartMargin"
+                android:layout_marginTop="@dimen/image_profileTopMargin"
+                android:layout_marginBottom="@dimen/image_profileBottomMargin"
+                android:background="@drawable/profile_spec" />
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Специалист"
-                android:textColor="@color/text_data"
-                android:textSize="@dimen/text" />
-        </LinearLayout>
-    </TableRow>
-</LinearLayout>
+                android:layout_marginStart="@dimen/relativeProfile_start"
+                android:layout_marginTop="@dimen/relativeProfile_top"
+                android:layout_marginBottom="@dimen/relativeProfile_bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/card_number1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{profileUserWork1.number}"
+                    android:textColor="@color/text_data"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/employee1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_number1"
+                    android:text="@{profileUserWork1.work}"
+                    android:textColor="@color/text_data"
+                    android:textSize="@dimen/text" />
+            </RelativeLayout>
+        </TableRow>
+    </RelativeLayout>
+</layout>

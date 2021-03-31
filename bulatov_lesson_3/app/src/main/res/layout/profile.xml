@@ -1,52 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/profile"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/layoutProfile_marginTop"
-    android:layout_marginEnd="@dimen/layoutProfile_marginEnd"
-    android:layout_marginBottom="@dimen/layoutProfile_marginBottom"
-    android:background="@color/white">
+<layout xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.EmployeeFirst">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/image_marginStart"
-        android:layout_marginTop="@dimen/image_marginTop"
-        android:layout_marginBottom="@dimen/image_marginBottom"
-        android:background="@drawable/profile_spec"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+        <variable
+            name="profileUserWork"
+            type="com.bulatov.lesson3.UserWork" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/textProfile_marginStart"
-        android:layout_marginTop="@dimen/textProfile_marginTop"
-        android:layout_marginBottom="@dimen/textProfile_marginBottom"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginTop="@dimen/layoutProfile_marginTop"
+        android:layout_marginEnd="@dimen/layoutProfile_marginEnd"
+        android:layout_marginBottom="@dimen/layoutProfile_marginBottom"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/image_marginStart"
+            android:layout_marginTop="@dimen/image_marginTop"
+            android:layout_marginBottom="@dimen/image_marginBottom"
+            android:background="@drawable/profile_spec"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_profileID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Карта N2391921982"
+            android:layout_marginStart="@dimen/layoutPersonal_marginStart"
+            android:layout_marginTop="@dimen/layoutPersonal_marginTop"
+            android:text="@{profileUserWork.number}"
             android:textColor="@color/text_data"
-            android:textSize="@dimen/text" />
+            android:textSize="@dimen/text"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_profileSpec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Специалист"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/layoutPersonal_marginStart"
+            android:text="@{profileUserWork.work}"
             android:textColor="@color/text_data"
-            android:textSize="@dimen/text" />
-    </LinearLayout>
+            android:textSize="@dimen/text"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/text_profileID" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

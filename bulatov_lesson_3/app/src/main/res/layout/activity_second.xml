@@ -1,28 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/paddingTop"
+        android:fitsSystemWindows="true">
 
-    <include layout="@layout/toolbar1" />
-
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <View
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/main.appbar"
+            style="@style/Theme.Lesson3"
             android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="@drawable/background_toolbar" />
-    </FrameLayout>
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_anchor="@+id/main.appbar"
+            app:layout_anchorGravity="center">
+            <fragment
+                android:name="com.bulatov.lesson3.fragment.Employee"
+                android:id="@+id/main.backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layoutPersonal_marginTop1"
+                android:layout_marginStart="@dimen/layoutPersonal_marginStart"
+                android:layout_marginBottom="@dimen/layoutProfile_marginBottom"
+                android:layout_marginEnd="@dimen/layoutProfile_marginEnd"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                tools:layout="@layout/profile1" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <fragment
+                android:name="com.bulatov.lesson3.fragment.PersonalData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_profile1"
+                tools:layout="@layout/personal_data1" />
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <fragment
-        android:name="com.bulatov.lesson3.fragment.PersonalData"
+        android:id="@+id/fragment_toolbar1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/fragment_profile1"
-        tools:layout="@layout/personal_data1" />
-
-
-</LinearLayout>
+        android:layout_marginTop="@dimen/topToolbar_margintop"
+        android:name="com.bulatov.lesson3.fragment.TopToolBar"
+        tools:layout="@layout/top_toolbar1" />
+</FrameLayout>
