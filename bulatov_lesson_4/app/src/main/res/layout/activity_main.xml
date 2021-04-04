@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/parent_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/card_backButtonView"
+                android:background="@drawable/ic_arrow"
+                android:layout_width="@dimen/card_backButtonView_width"
+                android:layout_height="@dimen/card_backButtonView_height" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_titleToolbar_marginStart"
+                android:layout_toEndOf="@+id/card_backButtonView"
+                android:text="@string/card_title_myHouse"
+                android:textColor="@color/black"
+                android:textSize="@dimen/card_titleToolBar" />
+
+            <ImageView
+                android:id="@+id/card_infoButtonView"
+                android:layout_width="@dimen/card_infoButtonView_width"
+                android:layout_height="@dimen/card_infoButtonView_height"
+                android:background="@drawable/ic_info_white"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/card_infoButtonView_marginEnd"
+                android:layout_toStartOf="@+id/card_homeButtonView" />
+
+            <ImageView
+                android:id="@+id/card_homeButtonView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_home"
+                android:layout_marginEnd="@dimen/card_homeButtonView_marginEnd"
+                android:layout_width="@dimen/card_homeButtonView_width"
+                android:layout_height="@dimen/card_homeButtonView_height" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:context=".MainActivity">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

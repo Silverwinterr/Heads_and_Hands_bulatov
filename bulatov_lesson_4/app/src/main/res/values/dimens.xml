@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_width">168dp</dimen>
+    <dimen name="list_item_height">128dp</dimen>
+    <dimen name="card_imageMarginTop">8dp</dimen>
+    <dimen name="card_imageMarginStart">8dp</dimen>
+    <dimen name="card_image_width">48dp</dimen>
+    <dimen name="card_image_height">48dp</dimen>
+    <dimen name="card_titleMarginStart">14dp</dimen>
+    <dimen name="card_titleMarginTop">15dp</dimen>
+    <dimen name="card_contentMarginStart">14dp</dimen>
+    <dimen name="card_backButtonView_width">24dp</dimen>
+    <dimen name="card_backButtonView_height">24dp</dimen>
+    <dimen name="card_titleToolBar">18sp</dimen>
+    <dimen name="card_titleToolbar_marginStart">32dp</dimen>
+    <dimen name="card_infoButtonView_width">17dp</dimen>
+    <dimen name="card_infoButtonView_height">17dp</dimen>
+    <dimen name="card_homeButtonView_width">23dp</dimen>
+    <dimen name="card_homeButtonView_height">18dp</dimen>
+    <dimen name="card_infoButtonView_marginEnd">24dp</dimen>
+    <dimen name="card_homeButtonView_marginEnd">16dp</dimen>
+</resources>
