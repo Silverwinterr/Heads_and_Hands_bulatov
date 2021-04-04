@@ -31,6 +31,7 @@ class Adapter(private val values: List<BaseInfoItem>) :
             LAYOUT_SHORT
     }
 
+
     private fun setContentShort(holder: RecyclerView.ViewHolder, position: Int) {
         val vaultItemHolder = holder as ViewHolderShort
         if (position == POSITION_FIRST || position == POSITION_SECOND) vaultItemHolder.contentText?.setTextColor(
@@ -68,8 +69,8 @@ class Adapter(private val values: List<BaseInfoItem>) :
     override fun getItemCount(): Int = values.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val view: View?
-        val viewHolder: RecyclerView.ViewHolder?
+        var view: View?
+        var viewHolder: RecyclerView.ViewHolder?
 
         if (viewType == LAYOUT_SHORT) {
             view =
@@ -92,6 +93,7 @@ class Adapter(private val values: List<BaseInfoItem>) :
         }
     }
 
+
     class ViewHolderShort(view: View?) : RecyclerView.ViewHolder(view!!) {
         var backgroundImageView: ImageView? = null
         var textTitle: TextView? = null
@@ -106,6 +108,7 @@ class Adapter(private val values: List<BaseInfoItem>) :
         }
     }
 
+
     class ViewHolderLong(view: View?) : RecyclerView.ViewHolder(view!!) {
         var backgroundImageView: ImageView? = null
         var textTitle: TextView? = null
@@ -117,6 +120,7 @@ class Adapter(private val values: List<BaseInfoItem>) :
             backgroundImageView = view?.findViewById(R.id.card_imageLong)
             textTitle = view?.findViewById(R.id.card_titleLong)
             contentText = view?.findViewById(R.id.card_contentLong)
+
         }
     }
 }

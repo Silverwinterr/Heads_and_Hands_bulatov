@@ -1,5 +1,6 @@
 package com.bulatov.lesson4
 
+
 class ContentItem {
     fun addListInfoItem(): List<BaseInfoItem> =
         listOf(
@@ -10,8 +11,8 @@ class ContentItem {
             DetailInfoItem("Интернет и ТВ", R.drawable.ic_tv, "Баланс 350 руб"),
             DetailInfoItem("Домофон", R.drawable.ic_homephone, "Подключен"),
             DetailInfoItem("Охрана", R.drawable.ic_guard, "Нет"),
-            BaseInfoItem("Контакты УК и служб", R.drawable.ic_uk_contacts, ""),
-            BaseInfoItem("Мои заявки", R.drawable.ic_request, ""),
-            BaseInfoItem("Памятка жителя", R.drawable.ic_about, "")
+            DetailInfoItem("Контакты УК и служб", R.drawable.ic_uk_contacts, ""),
+            DetailInfoItem("Мои заявки", R.drawable.ic_request, ""),
+            DetailInfoItem("Памятка жителя", R.drawable.ic_about, "")
         )
 }
