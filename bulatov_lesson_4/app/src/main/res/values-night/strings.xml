@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="card_title_myHouse">Моя квартира</string>
+    <string name="card_imageLong">Pic</string>
+    <string name="card_imageBackButton">Back</string>
+    <string name="card_imageInfo">Info</string>
+    <string name="card_imageHouse">House</string>
+    <string name="card_image">Pic</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_parent"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_itemLong_height">
+
+
+    <ImageView
+        android:id="@+id/card_imageLong"
+        android:layout_width="@dimen/card_imageLong_width"
+        android:layout_height="@dimen/card_imageLong_height"
+        android:layout_marginStart="@dimen/card_imageMarginStart"
+        android:layout_marginTop="@dimen/card_imageMarginTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/card_imageLong" />
+
+    <TextView
+        android:id="@+id/card_titleLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/card_title"
+        android:textSize="@dimen/card_titleLong_textSize"
+        android:layout_marginTop="@dimen/card_titleLong_MarginTop"
+        android:layout_marginStart="@dimen/card_titleLong_MarginStart"
+        app:layout_constraintStart_toEndOf="@+id/card_imageLong"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/card_contentLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/card_content"
+        android:textSize="@dimen/card_contentLong_textSize"
+        android:layout_marginStart="@dimen/card_contentLong_MarginStart"
+        app:layout_constraintStart_toEndOf="@+id/card_imageLong"
+        app:layout_constraintTop_toBottomOf="@+id/card_titleLong" />
+</androidx.constraintlayout.widget.ConstraintLayout>
