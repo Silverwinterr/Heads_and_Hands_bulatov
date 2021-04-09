@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="deliver_result">deliver result</string>
+    <string name="save">Save</string>
+    <string name="text_content">Услуги управляющей компании будут доступны после сдачи дома</string>
+    <string name="text_partnership">Предложить услугу</string>
+    <string name="button_all_text">Все</string>
+    <string name="title">Услуги</string>
+</resources>

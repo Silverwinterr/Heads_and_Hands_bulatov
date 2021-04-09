@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_color">#888888</color>
+    <color name="content_color">#363742</color>
+    <color name="address_color">#888888</color>
+    <color name="color_partnership">#eeeef0</color>
+</resources>
