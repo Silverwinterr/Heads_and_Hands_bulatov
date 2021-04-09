@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_marginStart">16dp</dimen>
+    <dimen name="content_marginStart">16dp</dimen>
+    <dimen name="address_marginStart">16dp</dimen>
+    <dimen name="title_size">14sp</dimen>
+    <dimen name="content_size">14sp</dimen>
+    <dimen name="address_size">12sp</dimen>
+    <dimen name="address_marginTop">8dp</dimen>
+    <dimen name="title_partnership_size">16sp</dimen>
+    <dimen name="item_image_width">100dp</dimen>
+    <dimen name="item_image_height">100dp</dimen>
+    <dimen name="button_all_marginVertical">24dp</dimen>
+    <dimen name="button_all_marginEnd">16dp</dimen>
+    <dimen name="titlebar_marginVertical">23dp</dimen>
+    <dimen name="titlebar_marginStart">16dp</dimen>
+    <dimen name="button_text_size">12sp</dimen>
+    <dimen name="image_partnership_marginVertical">8dp</dimen>
+    <dimen name="image_partnership_marginStart">14dp</dimen>
+    <dimen name="text_partnership_marginStart">14dp</dimen>
+    <dimen name="text_partnership_marginTop">14dp</dimen>
+    <dimen name="parent_partnership">8dp</dimen>
+</resources>
