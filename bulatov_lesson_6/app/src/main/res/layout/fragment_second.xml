@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#c1c1c1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.ItemSecond">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/table_coldWater"
+        android:layout_marginTop="@dimen/table_coldWater_marginTop"
+        android:layout_marginHorizontal="@dimen/table_coldWater_marginHorizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/table_coldWater_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/table_coldWaterTitle_marginTop"
+            android:layout_marginStart="@dimen/table_coldWaterTitle_marginStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_coldWater_image"
+            android:text="@string/table_coldWaterTitle"/>
+
+        <TextView
+            android:id="@+id/table_coldWaterSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/table_coldWaterSubTitle_marginStart"
+            app:layout_constraintTop_toBottomOf="@id/table_coldWater_title"
+            app:layout_constraintStart_toEndOf="@id/table_coldWater_image"
+            android:text="@string/table_coldWaterSubTile"
+            app:drawableStartCompat="@drawable/ic_serial_number" />
+
+        <TextView
+            android:id="@+id/table_coldWater_titleEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/table_coldWater_titleEditText_marginTop"
+            android:layout_marginStart="@dimen/table_coldWater_titleEditText_marginStart"
+            app:layout_constraintTop_toBottomOf="@id/table_coldWater_image"
+            android:text="@string/table_coldWater_titleEditText" />
+
+        <EditText
+            android:id="@+id/table_coldWater_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/table_coldWater_editText_marginStart"
+            android:layout_marginEnd="@dimen/table_coldWater_editText_marginEnd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/table_coldWater_titleEditText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/table_coldWater_editText"
+            android:text="@string/table_coldWater_editText_subTitle"/>
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="#32c7cd"
+            android:layout_marginBottom="44dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_coldWater_editText">
+        </Button>
+
+        <ImageView
+            android:id="@+id/table_coldWater_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ic_water_cold"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/table_hotWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_below="@id/table_coldWater">
+
+        <TextView
+            android:id="@+id/table_hotWater_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_hotWater_image"
+            android:text="TEST"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:drawableStartCompat="@drawable/ic_serial_number"
+            app:layout_constraintTop_toBottomOf="@id/table_hotWater_title"
+            app:layout_constraintStart_toEndOf="@id/table_hotWater_image"
+            android:text="TEST" />
+
+        <TextView
+            android:id="@+id/table_hotWater_titleEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/table_hotWater_image"
+            android:text="TEST" />
+
+        <EditText
+            android:id="@+id/table_hotWater_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="70dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/table_hotWater_titleEditText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/table_hotWater_editText"
+            android:text="TEST"/>
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="#32c7cd"
+            android:layout_marginBottom="38dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_hotWater_editText">
+        </Button>
+
+        <ImageView
+            android:id="@+id/table_hotWater_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ic_water_hot"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/table_electricity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_below="@id/table_hotWater">
+
+        <TextView
+            android:id="@+id/table_electricity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_electricity_image"
+            android:text="TEST"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:drawableStartCompat="@drawable/ic_serial_number"
+            app:layout_constraintTop_toBottomOf="@id/table_electricity_title"
+            app:layout_constraintStart_toEndOf="@id/table_electricity_image"
+            android:text="TEST" />
+
+        <TextView
+            android:id="@+id/table_electricity_titleEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/table_electricity_image"
+            android:text="TEST" />
+
+        <EditText
+            android:id="@+id/table_electricity_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="70dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/table_electricity_titleEditText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/table_electricity_editText"
+            android:text="TEST"/>
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="#32c7cd"
+            android:layout_marginBottom="38dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_electricity_editText">
+        </Button>
+
+        <ImageView
+            android:id="@+id/table_electricity_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ic_electro_copy"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

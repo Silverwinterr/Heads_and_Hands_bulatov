@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="table_coldWater_marginTop">8dp</dimen>
+    <dimen name="table_coldWater_marginHorizontal">8dp</dimen>
+    <dimen name="table_coldWaterTitle_marginTop">28dp</dimen>
+    <dimen name="table_coldWaterTitle_marginStart">16dp</dimen>
+    <dimen name="table_coldWaterSubTitle_marginStart">16dp</dimen>
+    <dimen name="table_coldWater_titleEditText_marginTop">26dp</dimen>
+    <dimen name="table_coldWater_titleEditText_marginStart">16dp</dimen>
+    <dimen name="table_coldWater_editText_marginStart">16dp</dimen>
+    <dimen name="table_coldWater_editText_marginEnd">70dp</dimen>
+</resources>

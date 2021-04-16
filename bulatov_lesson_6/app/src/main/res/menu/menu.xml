@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/fragment_first_menu"
+        android:visible="true">
+        <item
+            android:id="@+id/icon_search"
+            android:icon="@drawable/ic_nav_search"
+            android:title="@string/toolbar_search"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/g1_item1"
+            android:title="@string/g1_item1"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/g1_item2"
+            android:title="@string/g1_item2"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/g2_item1"
+            android:title="@string/g2_item1"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/g2_item2"
+            android:title="@string/g2_item2"
+            app:showAsAction="collapseActionView" />
+    </group>
+    <group
+        android:id="@+id/fragment_second_menu"
+        android:visible="false">
+        <item
+            android:id="@+id/icon_lamp"
+            android:icon="@drawable/ic_lamp"
+            android:title="@string/toolbar_search"
+            app:showAsAction="ifRoom" />
+    </group>
+</menu>

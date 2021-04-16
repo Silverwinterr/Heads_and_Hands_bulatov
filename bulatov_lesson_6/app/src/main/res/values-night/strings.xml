@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_fragmentTitleOne">Item one</string>
+    <string name="buttonPager_text_setGone">Скрыть баннер</string>
+    <string name="buttonPager_text_setVisible">Показать баннер</string>
+    <string name="g1_item1">g1.item1</string>
+    <string name="g1_item2">g1.item2</string>
+    <string name="g2_item1">g2.item1</string>
+    <string name="g2_item2">g2.item2</string>
+    <string name="toolbar_search">search</string>
+    <string name="fragment_first_textView_text">Первый фрагмент</string>
+    <string name="table_coldWaterTitle">Холодная вода</string>
+    <string name="table_coldWaterSubTile">54656553</string>
+    <string name="table_coldWater_titleEditText">Новые показания</string>
+    <string name="table_coldWater_editText_subTitle">Необходимо подать показания до 25.03.18</string>
+</resources>

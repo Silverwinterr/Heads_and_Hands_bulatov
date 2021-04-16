@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="selected_tab">#363742</color>
+    <color name="unselected_tab">#c1c1c1</color>
+    <color name="dotsColor">#363742</color>
+    <color name="dots_color_unselected">#c1c1c1</color>
+</resources>
