@@ -1,6 +1,13 @@
 *.iml
+<<<<<<< HEAD
 .gradle
 /local.properties
+=======
+*iml
+.gradle
+/local.properties
+.idea/
+>>>>>>> Не доделал верстку во втором фрагменте, остальное вроде все сделал
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -12,4 +19,15 @@
 /captures
 .externalNativeBuild
 .cxx
+<<<<<<< HEAD
 local.properties
+=======
+*/build
+release_keystore.properties
+*.jks
+
+keystore/keystore
+
+keystore/release.keystore
+local.properties
+>>>>>>> Не доделал верстку во втором фрагменте, остальное вроде все сделал
