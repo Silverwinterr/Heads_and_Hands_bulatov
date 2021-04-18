@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="item_active">#32c7cd</color>
+    <color name="item_inactive">#c1c1c1</color>
+    <color name="selected_tab">#363742</color>
+    <color name="unselected_tab">#c1c1c1</color>
+    <color name="dotsColor">#363742</color>
+    <color name="dots_color_unselected">#c1c1c1</color>
+    <color name="fragment_third_buttonBackground">#32c7cd</color>
+    <color name="fragment_second_parentBackground">#c1c1c1</color>
+    <color name="fragment_second_titleColor">#363742</color>
+    <color name="table_subTitle_textColor">#3f3f3f</color>
+    <color name="table_coldWater_info">#ff4242</color>
+    <color name="table_hotWater_info">#ff4242</color>
+    <color name="table_button_background">#32c7cd</color>
+</resources>
