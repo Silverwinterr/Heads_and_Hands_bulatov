@@ -1,25 +1,25 @@
 package com.bulatov.bulatov_lesson_6.fragment
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bulatov.bulatov_lesson_6.R
+import com.bulatov.bulatov_lesson_6.databinding.ViewPagerBinding
 
 
 class ViewPagerAdapter(private val images: List<Int>) :
     RecyclerView.Adapter<ViewPagerAdapter.ViewPagerViewHolder>() {
 
-    inner class ViewPagerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ViewPagerViewHolder(itemView: ViewPagerBinding) : RecyclerView.ViewHolder(itemView.root) {
         var image: ImageView? = null
         var text: TextView? = null
 
         init {
-            text = itemView.findViewById(R.id.view_pager_textView)
-            image = itemView.findViewById(R.id.view_pager_imageView)
+            text = itemView.viewPagerTextView
+            image = itemView.viewPagerImageView
             image?.setOnClickListener {
                 Toast.makeText(it.context,"Картинка ${adapterPosition+1}",Toast.LENGTH_SHORT).show()
             }
@@ -28,7 +28,7 @@ class ViewPagerAdapter(private val images: List<Int>) :
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewPagerViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.view_pager, parent, false)
+        val view = ViewPagerBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewPagerViewHolder(view)
     }
 
